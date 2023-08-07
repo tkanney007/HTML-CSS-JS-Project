@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Magic 8 Ball</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./assets/img/pngkey.com-pool-balls-png-889382.png" />
+      </div>
+
+      <div class="logotext">
+        <h1>The MAGIC 8 Ball Game</h1>
+        <p>Ask if you dare...</p>
+      </div>
+    </header>
+
+    <nav>
+      <div class="nav-container">
+        <div><a href="#play">Ask Magic 8 BALL</a></div>
+        <div><a href="#shop">Shop</a></div>
+        <div><a href="#win">Win A Magic 8 Ball</a></div>
+      </div>
+    </nav>
+    <div class="main-content-container">
+      <div class="play" id="play">
+        <div class="magic8ball">
+          <p>LET'S PLAY!</p>
+          <!--          <div class="magic8img">
+            <p>Testing</p>
+            <img src="./assets/img/ball.webp" alt="Image of a Magic 8 Ball" />
+          </div> -->
+          <div class="box-8ballimage box-flex-center">
+            <img
+              id="ball"
+              src="./assets/img/ball.webp"
+              alt="Image of a Magic 8 Ball"
+            />
+            <p class="box-text" id="response">
+              Testing is really all I can do to see if this works
+            </p>
+          </div>
+          <form>
+            <input
+              type="text"
+              name="question"
+              id="question"
+              placeholder="Ask your question...if you dare..."
+            />
+            <br />
+            <button type="button" id="shakebutton">
+              Ask The Magic 8 Ball!
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="shop" id="shop">
+        <h2>SHOP MAGIC 8 BALL</h2>
+        <div class="shopitems-container">
+          <div>
+            <h3>Darth Vader Magic 8 Ball</h3>
+            <h6>$20.00</h6>
+            <img src="./assets/img/Darth8ball.jpg" alt="Darth Vader 8 Ball" />
+            <p>
+              Be one with the dark side with this cool Darth Vader take on the
+              Magic 8 ball.
+            </p>
+          </div>
+          <div>
+            <h3>The World's Smallest 8 Ball</h3>
+            <h6>$10.00</h6>
+            <img
+              src="./assets/img/small8ball.webp"
+              alt="The World's Smallest 8 Ball"
+            />
+            <p>
+              Have hours of questioning fun with this small on the go version of
+              the classic Magic 8 ball.
+            </p>
+          </div>
+          <div>
+            <h3>Tie Dye Magic 8 Ball</h3>
+            <h6>$15.00</h6>
+            <img
+              src="./assets/img/tiedie8ball.webp"
+              alt="Tie Dye Magic 8 Ball"
+            />
+            <p>All the fun of the magic 8 ball with a little bit of flair.</p>
+          </div>
+          <div>
+            <h3>Disney's Frozen 8 Ball</h3>
+            <h6>$20.00</h6>
+            <img
+              src="./assets/img/frozen8ball.webp"
+              alt="Disney's Frozen 8 Ball"
+            />
+            <p>
+              Let it go and ask all the questions you have been dying to ask!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="contact-container" id="win">
+        <h2>Enter to win your very own Magic 8 Ball!</h2>
+        <form>
+          <label for="email">Your email:</label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Type your email here"
+          />
+          <br />
+          <label for="comments">Tell us why you want a Magic 8 Ball:</label>
+          <br />
+          <textarea
+            id="comments"
+            name="comments"
+            cols="50"
+            rows="10"
+            placeholder="Tell us what you would ask your Magic 8 ball if you had one."
+          ></textarea>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer"><h2>Copyright&copy; 2023</h2></div>
+    <script src="./assets/index.js"></script>
+  </body>
+</html>
